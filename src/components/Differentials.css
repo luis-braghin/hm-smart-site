@@ -1,0 +1,12 @@
+.stats-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; padding: 34px; border-radius: var(--r-xl); background: linear-gradient(135deg, #fff 0%, #EFF6FF 100%); border: 1px solid var(--color-line); box-shadow: var(--shadow); margin-bottom: 48px; }
+@media (max-width:900px) { .stats-row { grid-template-columns: repeat(2,1fr); padding: 28px; } }
+.stat { text-align: center; padding: 8px; }
+.stat .num { font-family: var(--font-head); font-weight: 800; font-size: clamp(2.4rem, 4vw, 3.2rem); line-height: 1; background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)); -webkit-background-clip: text; background-clip: text; color: transparent; letter-spacing: -0.04em; margin-bottom: 6px; }
+.stat .lbl { color: var(--color-ink-2); font-size: .95rem; font-weight: 500; }
+
+.diff-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; }
+@media (max-width:800px) { .diff-grid { grid-template-columns: 1fr; } }
+.diff-card { background: #fff; border-radius: var(--r-lg); padding: 26px; display: flex; gap: 18px; align-items: flex-start; border: 1px solid var(--color-line); box-shadow: var(--shadow-sm); }
+.diff-card .ico { width: 48px; height: 48px; border-radius: 14px; flex: none; background: var(--color-primary-soft); color: var(--color-primary); display: grid; place-items: center; }
+.diff-card h4 { color: var(--color-navy); margin-bottom: 4px; font-size: 1.05rem; }
+.diff-card p { color: var(--color-ink-2); font-size: .94rem; }

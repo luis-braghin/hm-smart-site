@@ -1,0 +1,12 @@
+.test-marquee { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+@media (max-width:900px) { .test-marquee { grid-template-columns: 1fr; } }
+.test-card { background: #fff; border-radius: var(--r-lg); padding: 32px 28px; border: 1px solid var(--color-line); box-shadow: var(--shadow-sm); position: relative; display: flex; flex-direction: column; gap: 18px; }
+.test-card .quote-mark { font-family: Georgia, serif; font-size: 5rem; line-height: .6; color: var(--color-warm); opacity: .32; margin-top: -4px; }
+.test-card blockquote { margin: 0; font-family: var(--font-head); font-weight: 600; font-size: 1.12rem; line-height: 1.4; color: var(--color-navy); letter-spacing: -0.01em; }
+.test-card .meta { display: flex; flex-direction: column; gap: 2px; padding-top: 14px; border-top: 1px solid var(--color-line); margin-top: auto; }
+.test-card .meta .name { font-weight: 600; font-size: .92rem; color: var(--color-ink); }
+.test-card .meta .loc { font-size: .85rem; color: var(--color-ink-3); }
+
+.segments { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-top: 56px; padding-top: 40px; border-top: 1px dashed var(--color-line); }
+.seg { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; background: #fff; border: 1px solid var(--color-line); font-family: var(--font-head); font-weight: 600; font-size: .86rem; color: var(--color-navy); }
+.seg svg { color: var(--color-primary); }

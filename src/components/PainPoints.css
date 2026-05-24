@@ -1,0 +1,9 @@
+.pain-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
+@media (max-width:1000px) { .pain-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width:560px) { .pain-grid { grid-template-columns: 1fr; } }
+.pain-card { background: #fff; border-radius: var(--r-lg); padding: 28px 24px; border: 1px solid var(--color-line); box-shadow: var(--shadow-sm); transition: transform .25s ease, box-shadow .25s ease; position: relative; overflow: hidden; }
+.pain-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.pain-card::before { content: ""; position: absolute; top: 0; left: 0; width: 60%; height: 3px; background: linear-gradient(90deg, var(--color-warm), transparent); border-radius: 3px; }
+.pain-card .pic { width: 56px; height: 56px; border-radius: 16px; background: linear-gradient(135deg, rgba(52,120,198,.12), rgba(96,165,250,.18)); display: grid; place-items: center; color: var(--color-primary); margin-bottom: 18px; }
+.pain-card h3 { color: var(--color-navy); margin-bottom: 8px; font-size: 1.08rem; line-height: 1.3; }
+.pain-card p { color: var(--color-ink-3); font-size: .95rem; }

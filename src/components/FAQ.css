@@ -1,0 +1,10 @@
+.faq-wrap { max-width: 820px; margin: 0 auto; }
+.faq { background: #fff; border-radius: var(--r); padding: 0; border: 1px solid var(--color-line); overflow: hidden; margin-bottom: 12px; transition: box-shadow .2s; }
+.faq[open] { box-shadow: var(--shadow); border-color: rgba(52,120,198,.30); }
+.faq summary { list-style: none; cursor: pointer; padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-family: var(--font-head); font-weight: 600; font-size: 1.04rem; color: var(--color-navy); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary .plus { flex: none; width: 32px; height: 32px; border-radius: 10px; background: var(--color-primary-soft); color: var(--color-primary); display: grid; place-items: center; transition: transform .25s; }
+.faq[open] summary .plus { transform: rotate(45deg); background: var(--color-primary); color: #fff; }
+.faq-body { padding: 0 24px 22px; color: var(--color-ink-2); font-size: .97rem; line-height: 1.6; }
+.faq-body a { color: var(--color-primary); font-weight: 600; border-bottom: 1px solid currentColor; }
+.faq-body p { margin-bottom: 10px; }

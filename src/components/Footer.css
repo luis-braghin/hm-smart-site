@@ -1,0 +1,17 @@
+footer { background: #16243A; color: rgba(255,255,255,.75); padding: 72px 0 28px; margin-top: 96px; }
+.ft-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+@media (max-width:860px) { .ft-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width:520px) { .ft-grid { grid-template-columns: 1fr; } }
+footer h5 { color: #fff; font-family: var(--font-head); font-weight: 700; font-size: .95rem; margin: 0 0 16px; letter-spacing: -0.01em; }
+footer .ft-logo { margin-bottom: 18px; }
+footer .ft-logo .word { color: #fff; font-size: 1.15rem; font-weight: 300; }
+footer p { color: rgba(255,255,255,.6); font-size: .92rem; line-height: 1.55; }
+footer ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+footer ul a { font-size: .92rem; color: rgba(255,255,255,.7); transition: color .15s; }
+footer ul a:hover { color: var(--color-primary); }
+.ft-soc { display: flex; gap: 10px; margin-top: 14px; }
+.ft-soc a { width: 38px; height: 38px; border-radius: 11px; background: rgba(255,255,255,.08); display: grid; place-items: center; color: #fff; transition: background .15s, transform .15s; }
+.ft-soc a:hover { background: var(--color-primary); transform: translateY(-2px); }
+.ft-bottom { border-top: 1px solid rgba(255,255,255,.08); padding-top: 24px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: .85rem; color: rgba(255,255,255,.55); }
+.ft-badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; border: 1px solid rgba(255,255,255,.15); font-size: .78rem; color: rgba(255,255,255,.7); font-family: var(--font-head); font-weight: 600; letter-spacing: .04em; }
+.ft-badge .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--color-amber); }

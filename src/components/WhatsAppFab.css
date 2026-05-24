@@ -1,0 +1,7 @@
+.fab { position: fixed; right: 22px; bottom: 22px; z-index: 60; width: 62px; height: 62px; border-radius: 50%; background: var(--color-whats); color: #fff; display: grid; place-items: center; box-shadow: 0 12px 28px rgba(37,211,102,.45), inset 0 2px 0 rgba(255,255,255,.25); transition: transform .2s ease; }
+.fab:hover { transform: scale(1.07); }
+.fab::before { content: ""; position: absolute; inset: -6px; border-radius: 50%; border: 2px solid var(--color-whats); opacity: .5; animation: pulse 2.2s ease-out infinite; }
+.fab .label { position: absolute; right: 74px; background: #fff; color: var(--color-navy); padding: 10px 16px; border-radius: 14px; font-family: var(--font-head); font-weight: 600; font-size: .88rem; white-space: nowrap; box-shadow: var(--shadow); opacity: 0; transform: translateX(8px); pointer-events: none; transition: opacity .2s, transform .2s; }
+.fab:hover .label { opacity: 1; transform: translateX(0); }
+@keyframes pulse { 0%{transform:scale(1);opacity:.5} 80%{transform:scale(1.5);opacity:0} 100%{transform:scale(1.5);opacity:0} }
+@media (max-width:520px) { .fab .label { display: none; } }

@@ -1,0 +1,7 @@
+.cookie { position: fixed; left: 22px; bottom: 22px; z-index: 55; max-width: 380px; background: #fff; border-radius: var(--r); padding: 18px 20px; border: 1px solid var(--color-line); box-shadow: var(--shadow-lg); display: flex; flex-direction: column; gap: 14px; transform: translateY(20px); opacity: 0; pointer-events: none; transition: transform .35s ease, opacity .35s ease; }
+.cookie.show { transform: translateY(0); opacity: 1; pointer-events: auto; }
+.cookie p { font-size: .88rem; color: var(--color-ink-2); line-height: 1.5; }
+.cookie p strong { color: var(--color-ink); }
+.cookie .ck-actions { display: flex; gap: 8px; }
+.cookie .btn { padding: 9px 14px; min-height: 38px; font-size: .85rem; border-radius: 10px; }
+@media (max-width:640px) { .cookie { left: 12px; right: 96px; bottom: 14px; max-width: none; } }

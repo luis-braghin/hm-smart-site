@@ -1,0 +1,22 @@
+.hd { position: sticky; top: 0; z-index: 50; background: rgba(255,251,245,.78); backdrop-filter: blur(20px) saturate(160%); border-bottom: 1px solid transparent; transition: border-color .2s ease, background .2s ease; }
+.hd.scrolled { border-color: var(--color-line); background: rgba(255,251,245,.92); }
+.hd-inner { display: flex; align-items: center; justify-content: space-between; height: 74px; gap: 24px; }
+.hd-logo { display: flex; align-items: center; gap: 10px; }
+.hd-logo .mark { width: 42px; height: 42px; display: grid; place-items: center; }
+.hd-logo .mark svg { width: 100%; height: 100%; display: block; filter: drop-shadow(0 4px 10px rgba(52,120,198,.30)); }
+.hd-logo .word { font-family: var(--font-head); font-weight: 300; letter-spacing: .14em; text-transform: uppercase; color: var(--color-ink); font-size: 1.05rem; }
+.hd-nav { display: flex; gap: 6px; align-items: center; }
+.hd-nav a { padding: 9px 14px; border-radius: 10px; font-family: var(--font-head); font-weight: 600; font-size: .93rem; color: var(--color-ink-2); transition: background .15s, color .15s; text-decoration: none; }
+.hd-nav a:hover { background: rgba(52,120,198,.08); color: var(--color-primary-dark); }
+.hd-cta { display: flex; gap: 10px; align-items: center; }
+.hd-cta .btn { padding: 11px 18px; min-height: 44px; font-size: .92rem; }
+.hd-burger { display: none; width: 42px; height: 42px; border-radius: 10px; background: #fff; border: 1px solid var(--color-line); cursor: pointer; }
+@media (max-width: 1100px) { .hd-nav { display: none; } .hd-cta .btn-ghost { display: none; } .hd-burger { display: grid; place-items: center; } }
+
+.drawer { position: fixed; inset: 0; z-index: 70; background: rgba(30,58,95,.4); backdrop-filter: blur(6px); opacity: 0; pointer-events: none; transition: opacity .2s; }
+.drawer.open { opacity: 1; pointer-events: auto; }
+.drawer-panel { position: absolute; top: 0; right: 0; bottom: 0; width: min(85vw, 340px); background: var(--color-bg); padding: 24px; display: flex; flex-direction: column; gap: 6px; transform: translateX(100%); transition: transform .25s ease; }
+.drawer.open .drawer-panel { transform: translateX(0); }
+.drawer-panel a { padding: 14px 18px; border-radius: 12px; font-family: var(--font-head); font-weight: 600; color: var(--color-navy); text-decoration: none; }
+.drawer-panel a:hover { background: var(--color-primary-soft); color: var(--color-primary-dark); }
+.drawer-panel .close { align-self: flex-end; width: 42px; height: 42px; border-radius: 10px; background: #fff; border: 1px solid var(--color-line); display: grid; place-items: center; margin-bottom: 8px; cursor: pointer; }
